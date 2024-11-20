@@ -15,12 +15,16 @@ class Titles(BaseModel):
     reference: str
     other: list[str]
 
+
 @app.get("/similarity")
 def get_similarity():
-    return {"message": "This endpoint only supports POST requests for similarity calculation."}
+    return {
+        "message": "This endpoint only supports POST requests for similarity calculation."
+    }
+
 
 @app.post("/similarity")
-def similarity(inputs: Titles): # async?
+def similarity(inputs: Titles):
     """Given a reference title and a list of other titles, return the most similar title to the reference one"""
     reference = inputs.reference
     titles = inputs.other

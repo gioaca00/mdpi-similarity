@@ -8,9 +8,7 @@ readme = "README.md"
 [tool.poetry.dependencies]
 python = "^3.11"
 fastapi = "^0.115.5"
-transformers = "^4.46.2"
 uvicorn = "^0.32.0"
-torch = "^2.5.1"
 sentence-transformers = "^3.3.0"
 
 

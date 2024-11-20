@@ -10,8 +10,8 @@ If you don't have conda installed, check how to get started with miniconda [here
 
 Create and activate your conda environment like this:
 ```bash
-conda create -n mdpi-similarity python=3.11 -y
-conda activate mdpi-similarity
+conda create -n mdpi-env python=3.11 -y
+conda activate mdpi-env
 ```
 
 ## Install the dependencies using poetry
